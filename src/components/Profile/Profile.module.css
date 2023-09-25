@@ -1,0 +1,77 @@
+
+/* Стили для корневого контейнера */
+
+.profile {
+    width: 700px;
+    height: 800px;
+    background-color: rgba(231, 240, 245, 0.93);
+    margin: 0 auto;
+    margin-top: 30px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Стили для контейнера с белым фоном */
+  .description {
+    background-color: white;
+    padding: 0;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Стили для круглого аватара */
+  .avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: ;
+  }
+  
+  /* Стили для надписей */
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .tag {
+    font-size: 18px;
+    color: gray;
+    margin: 0;
+  }
+  
+  .location {
+    font-size: 16px;
+    color: gray;
+    margin: 0;
+  }
+
+  /* Добавьте следующие стили в ваш CSS */
+
+.statsTable {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .statCell {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .statLabel {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .statNumber {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  
