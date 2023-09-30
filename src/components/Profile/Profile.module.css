@@ -1,77 +1,93 @@
 
-/* Стили для корневого контейнера */
-
 .profile {
-    width: 700px;
-    height: 800px;
+    width: 650px;
+    height: 650px;
     background-color: rgba(231, 240, 245, 0.93);
     margin: 0 auto;
     margin-top: 30px;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   
-  /* Стили для контейнера с белым фоном */
   .description {
     background-color: white;
     padding: 0;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* Стили для круглого аватара */
   .avatar {
+    border: solid 1px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
-    margin: ;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
   }
   
-  /* Стили для надписей */
   .name {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     font-size: 24px;
     font-weight: bold;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
   
   .tag {
+    font-family: inherit;
     font-size: 18px;
     color: gray;
-    margin: 0;
+    margin-bottom: 15px;
   }
   
   .location {
+    font-family: inherit;
     font-size: 16px;
     color: gray;
-    margin: 0;
+    margin-bottom: 30px;
   }
 
-  /* Добавьте следующие стили в ваш CSS */
-
-.statsTable {
-    width: 100%;
+  .statsTable {
+    width: 400px;
     border-collapse: collapse;
-    
+    table-layout: fixed;
   }
   
   .statCell {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+    background-color: rgba(243, 247, 247, 0.93);
+    border-bottom: 0;
   }
   
   .statLabel {
-    margin: 0;
-    font-weight: bold;
+    font-family: inherit;
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 17px;
   }
   
   .statNumber {
-    margin: 0;
+    margin-bottom: 20px;
     font-weight: bold;
+    color: #000;
+    font-size: 18px;
+  }
+
+  table td:first-child{
+    border-left: none;
+  }
+
+  table td:last-child{
+    border-right: none;
   }
   
   

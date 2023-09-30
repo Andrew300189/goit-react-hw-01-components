@@ -1,0 +1,70 @@
+
+.statistics {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 650px;
+    height: 450px;
+    background-color: rgba(231, 240, 245, 0.93);
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .statTable {
+    width: 400px;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+.item {
+    text-align: center;
+    background-color: rgba(243, 247, 247, 0.93);
+}
+ 
+  .item:nth-child(1) {
+    background-color: #3498db;
+  }
+  
+  .item:nth-child(2) {
+    background-color: #9b59b6;
+  }
+  
+  .item:nth-child(3) {
+    background-color: #d45959;
+  }
+  
+  .item:nth-child(4) {
+    background-color: #1abc9c;
+  }
+  
+  .label {
+    font-family: inherit;
+    color: white;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .title{
+    font-family: inherit;
+    color: rgb(99, 84, 84);
+    text-transform: uppercase;
+    margin: 50px 0;
+  }
+
+  .percentage {
+    color: white;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  

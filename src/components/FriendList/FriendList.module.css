@@ -1,0 +1,47 @@
+
+.friendList {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    padding: 30px 0;
+    max-width: 650px;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 6px 14px -6px rgba(34, 60, 80, 0.6);
+  }
+
+  .item:not(:last-child) {
+   margin-bottom: 15px;
+  }
+  
+  .status {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 10px;
+    flex-shrink: 0;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: lightgray;
+    margin: 10px 0;
+  }
+  
+  .name {
+    margin-left: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  }
+  
