@@ -18,8 +18,8 @@ const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map((item, index) => (
           <tr key={index}>
-            <td className={styles.centerText}>
-              <div className={styles.inlineBlock}>
+            <td>
+              <div>
                 {item.type}
               </div>
             </td>
