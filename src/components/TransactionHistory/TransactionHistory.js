@@ -3,9 +3,12 @@ import PropTypes from 'prop-types';
 import styles from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => {
+  // Найдем самое длинное слово в столбце 'Type'
+  const maxTypeLength = Math.max(...items.map(item => item.type.length));
+
   return (
     <table className={styles.transactionHistory}>
-      <thead>
+      <thead className={styles.head}>
         <tr>
           <th>Type</th>
           <th>Amount</th>
@@ -15,7 +18,11 @@ const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map((item, index) => (
           <tr key={index}>
-            <td>{item.type}</td>
+            <td className={styles.centerText}>
+              <div className={styles.inlineBlock}>
+                {item.type}
+              </div>
+            </td>
             <td>{item.amount}</td>
             <td>{item.currency}</td>
           </tr>

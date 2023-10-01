@@ -20,7 +20,7 @@
   }
   
   .avatar {
-    border: solid 1px;
+    border: solid 1px lightgray;
     border-radius: 50%;
     width: 140px;
     height: 140px;
