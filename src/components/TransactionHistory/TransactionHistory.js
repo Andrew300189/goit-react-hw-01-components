@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import styles from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => {
-  // Найдем самое длинное слово в столбце 'Type'
-  const maxTypeLength = Math.max(...items.map(item => item.type.length));
-
   return (
     <table className={styles.transactionHistory}>
       <thead className={styles.head}>
