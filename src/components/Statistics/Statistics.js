@@ -10,8 +10,8 @@ const Statistics = ({ title, stats }) => {
         <table className={styles.statTable}>
           <tbody>
             <tr>
-              {stats.slice(0, 4).map((stat, index) => (
-                <td key={index} className={styles.item}>
+              {stats.map((stat) => (
+                <td key={stat.id} className={styles.item}>
                   <p className={styles.label}>{stat.label}</p>
                   <p className={styles.percentage}>{stat.percentage}%</p>
                 </td>
