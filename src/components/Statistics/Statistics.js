@@ -3,6 +3,24 @@ import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => {
+
+  const labelPercentages = {};
+
+  stats.forEach((stat) => {
+    if (labelPercentages.hasOwnProperty(stat.label)) {
+      labelPercentages[stat.label] += stat.percentage;
+    } else {
+      labelPercentages[stat.label] = stat.percentage;
+    }
+  });
+
+  const aggregatedStats = Object.keys(labelPercentages).map((label) => ({
+    label,
+    percentage: labelPercentages[label],
+  }));
+
+  const displayedStats = aggregatedStats.slice(0, 4);
+
   return (
     <section className={styles.statistics}>
       <div className={styles.content}>
@@ -10,8 +28,8 @@ const Statistics = ({ title, stats }) => {
         <table className={styles.statTable}>
           <tbody>
             <tr>
-              {stats.map((stat) => (
-                <td key={stat.id} className={styles.item}>
+              {displayedStats.map((stat) => (
+                <td key={stat.label} className={styles.item}>
                   <p className={styles.label}>{stat.label}</p>
                   <p className={styles.percentage}>{stat.percentage}%</p>
                 </td>
